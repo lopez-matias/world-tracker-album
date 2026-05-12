@@ -7,7 +7,7 @@ from ..auth import get_current_user_id
 from ..database import get_db
 from ..models import UserSticker
 from ..schemas import CountryProgress, CountryStickers, Progress, StickerOut, ToggleSticker
-from ..stickers_data import get_countries, get_country
+from ..stickers_data import get_all_stickers, get_countries, get_country
 
 router = APIRouter(prefix="/api/stickers", tags=["stickers"])
 

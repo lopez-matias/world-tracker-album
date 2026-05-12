@@ -91,10 +91,11 @@ svg { pointer-events: none; flex-shrink: 0; }
   animation: splashFadeUp 0.5s ease 0.65s both;
 }
 .splash-year {
-  font-size: clamp(88px, 24vw, 148px);
+  font-size: clamp(72px, 20vw, 130px);
   font-weight: 900;
-  line-height: 0.88;
-  letter-spacing: -0.06em;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  padding: 0 0.08em;
   background: linear-gradient(135deg, #e63946 0%, #f97316 30%, #fbbf24 58%, #4ade80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
