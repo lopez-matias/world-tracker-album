@@ -4,19 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mundial 2026 — Perfil</title>
-  <link rel="stylesheet" href="/static/css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="profile-page">
 
   <header class="profile-header">
-    <a href="/album" class="btn-back">← Volver al álbum</a>
+    <a href="/album" class="btn-back">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      Volver
+    </a>
     <h1 class="profile-title">Mi Perfil</h1>
     <button id="logoutBtn" class="btn btn-ghost">Cerrar sesión</button>
   </header>
 
   <main class="profile-main">
 
-    <!-- Stats -->
     <section class="profile-card stats-card">
       <h2 class="card-title">Mis estadísticas</h2>
       <div class="stats-grid">
@@ -40,7 +42,6 @@
       </div>
     </section>
 
-    <!-- Change username -->
     <section class="profile-card">
       <h2 class="card-title">Cambiar nombre de usuario</h2>
       <form id="usernameForm" class="profile-form">
@@ -55,7 +56,6 @@
       </form>
     </section>
 
-    <!-- Change password -->
     <section class="profile-card">
       <h2 class="card-title">Cambiar contraseña</h2>
       <form id="passwordForm" class="profile-form">
@@ -63,14 +63,20 @@
           <label for="currentPw">Contraseña actual</label>
           <div class="input-wrapper">
             <input type="password" id="currentPw" placeholder="••••••••" autocomplete="current-password" />
-            <button type="button" class="toggle-pw" onclick="togglePw('currentPw', this)">👁</button>
+            <button type="button" class="toggle-pw" onclick="togglePw('currentPw', this)" aria-label="Ver u ocultar campo">
+              <svg class="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="icon-eye-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </button>
           </div>
         </div>
         <div class="form-group">
           <label for="newPw">Nueva contraseña</label>
           <div class="input-wrapper">
             <input type="password" id="newPw" placeholder="Mínimo 8 caracteres" autocomplete="new-password" />
-            <button type="button" class="toggle-pw" onclick="togglePw('newPw', this)">👁</button>
+            <button type="button" class="toggle-pw" onclick="togglePw('newPw', this)" aria-label="Ver u ocultar campo">
+              <svg class="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="icon-eye-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </button>
           </div>
         </div>
         <div id="passwordMessage" class="form-success hidden"></div>
@@ -81,6 +87,6 @@
 
   </main>
 
-  <script src="/static/js/profile.js"></script>
+  <script src="js/profile.js"></script>
 </body>
 </html>

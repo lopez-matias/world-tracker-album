@@ -10,6 +10,9 @@ const STAR_CODES = new Set([
   'KOR12', 'BEL9', 'ENG10', 'URU10', 'SWE13', 'ESP9',
 ]);
 
+const SVG_CHECK = '<svg class="sticker-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
+const SVG_STAR = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
+
 const $ = id => document.getElementById(id);
 
 async function checkAuth() {
@@ -65,10 +68,12 @@ function renderNavDots() {
     if (index === currentIndex) dot.classList.add('active');
     else if (country.collected === country.total) dot.classList.add('complete');
     dot.title = country.name;
-    dot.setAttribute('aria-label', `Ir a ${country.name}`);
+    dot.setAttribute('aria-label', country.name);
     dot.addEventListener('click', () => navigateTo(index));
     container.appendChild(dot);
   });
+  const active = container.querySelector('.nav-dot.active');
+  if (active) active.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
 }
 
 function updateNavPosition() {
@@ -108,7 +113,7 @@ function renderStickers(countryData) {
 
     const circle = document.createElement('div');
     circle.className = `sticker-circle${sticker.has_it ? ' collected' : ''}`;
-    circle.innerHTML = sticker.has_it ? '<span class="sticker-check">✓</span>' : '';
+    circle.innerHTML = sticker.has_it ? SVG_CHECK : '';
 
     const code = document.createElement('div');
     code.className = 'sticker-code';
@@ -121,7 +126,7 @@ function renderStickers(countryData) {
     if (STAR_CODES.has(sticker.code) || sticker.type === 'star') {
       const star = document.createElement('span');
       star.className = 'sticker-star';
-      star.textContent = '★';
+      star.innerHTML = SVG_STAR;
       item.appendChild(star);
     }
 
@@ -169,10 +174,21 @@ function navigateTo(index) {
 
 $('prevBtn').addEventListener('click', () => navigateTo(currentIndex - 1));
 $('nextBtn').addEventListener('click', () => navigateTo(currentIndex + 1));
+
 document.addEventListener('keydown', event => {
   if (event.key === 'ArrowLeft') navigateTo(currentIndex - 1);
   if (event.key === 'ArrowRight') navigateTo(currentIndex + 1);
 });
+
+// Touch swipe support
+let touchStartX = 0;
+document.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].clientX; }, { passive: true });
+document.addEventListener('touchend', e => {
+  const delta = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(delta) < 50) return;
+  if (delta > 0) navigateTo(currentIndex + 1);
+  else navigateTo(currentIndex - 1);
+}, { passive: true });
 
 (async function init() {
   const user = await checkAuth();

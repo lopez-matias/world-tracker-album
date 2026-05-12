@@ -7,6 +7,7 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 import os
 
+from .config import settings
 from .database import engine, Base
 from .routers import auth, stickers, users
 
@@ -19,7 +20,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[settings.APP_URL],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -31,7 +32,8 @@ app.include_router(users.router)
 
 FRONTEND_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "frontend")
 
-app.mount("/static", StaticFiles(directory=FRONTEND_DIR), name="static")
+app.mount("/css", StaticFiles(directory=os.path.join(FRONTEND_DIR, "css")), name="css")
+app.mount("/js", StaticFiles(directory=os.path.join(FRONTEND_DIR, "js")), name="js")
 
 
 @app.get("/")
@@ -49,6 +51,3 @@ def serve_profile():
     return FileResponse(os.path.join(FRONTEND_DIR, "profile.html"))
 
 
-@app.get("/reset-password")
-def serve_reset():
-    return FileResponse(os.path.join(FRONTEND_DIR, "index.html"))

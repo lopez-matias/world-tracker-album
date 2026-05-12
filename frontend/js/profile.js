@@ -6,7 +6,7 @@ function togglePw(inputId, btn) {
   const input = $(inputId);
   const show = input.type === 'password';
   input.type = show ? 'text' : 'password';
-  btn.style.opacity = show ? '0.9' : '0.6';
+  btn.classList.toggle('active', show);
 }
 window.togglePw = togglePw;
 

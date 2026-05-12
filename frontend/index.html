@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mundial 2026 — Álbum de Figuritas</title>
-  <link rel="stylesheet" href="/static/css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="auth-page">
   <div class="auth-bg">
@@ -15,7 +15,11 @@
   <main class="auth-container">
     <div class="auth-card">
       <div class="auth-logo">
-        <span class="auth-trophy">🏆</span>
+        <svg class="auth-logo-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 2v6l-2 4h12l-2-4V2z"/><path d="M6 12c0 2.5 1.5 4 6 4s6-1.5 6-4"/>
+          <line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/>
+          <path d="M8 4H5c0 4 2 6 4 7"/><path d="M16 4h3c0 4-2 6-4 7"/>
+        </svg>
         <h1>Mundial 2026</h1>
         <p class="auth-subtitle">Álbum de Figuritas</p>
       </div>
@@ -30,7 +34,10 @@
           <label for="loginPassword">Contraseña</label>
           <div class="input-wrapper">
             <input type="password" id="loginPassword" placeholder="••••••••" autocomplete="current-password" />
-            <button type="button" class="toggle-pw" onclick="togglePw('loginPassword', this)">👁</button>
+            <button type="button" class="toggle-pw" onclick="togglePw('loginPassword', this)" aria-label="Mostrar u ocultar contraseña">
+              <svg class="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="icon-eye-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </button>
           </div>
         </div>
         <div class="form-row">
@@ -38,7 +45,6 @@
             <input type="checkbox" id="rememberMe" />
             <span>Recordarme 30 días</span>
           </label>
-          <a href="#" class="link" id="forgotLink">¿Olvidaste tu contraseña?</a>
         </div>
         <div id="loginError" class="form-error hidden"></div>
         <button type="submit" class="btn btn-primary btn-full">Ingresar</button>
@@ -60,7 +66,10 @@
           <label for="regPassword">Contraseña</label>
           <div class="input-wrapper">
             <input type="password" id="regPassword" placeholder="Mínimo 8 caracteres" autocomplete="new-password" />
-            <button type="button" class="toggle-pw" onclick="togglePw('regPassword', this)">👁</button>
+            <button type="button" class="toggle-pw" onclick="togglePw('regPassword', this)" aria-label="Mostrar u ocultar contraseña">
+              <svg class="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="icon-eye-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </button>
           </div>
         </div>
         <div id="registerError" class="form-error hidden"></div>
@@ -68,33 +77,9 @@
         <p class="form-switch">¿Ya tenés cuenta? <a href="#" class="link" id="toLogin">Iniciá sesión</a></p>
       </form>
 
-      <!-- Forgot Password Form -->
-      <form id="forgotForm" class="auth-form">
-        <div class="form-group">
-          <label for="forgotEmail">Email de tu cuenta</label>
-          <input type="email" id="forgotEmail" placeholder="vos@ejemplo.com" />
-        </div>
-        <div id="forgotMessage" class="form-success hidden"></div>
-        <div id="forgotError" class="form-error hidden"></div>
-        <button type="submit" class="btn btn-primary btn-full">Enviar link de recuperación</button>
-        <p class="form-switch"><a href="#" class="link" id="backToLogin">← Volver al login</a></p>
-      </form>
-
-      <!-- Reset Password Form -->
-      <form id="resetForm" class="auth-form">
-        <h2 class="form-title">Nueva contraseña</h2>
-        <div class="form-group">
-          <label for="resetPassword">Nueva contraseña</label>
-          <div class="input-wrapper">
-            <input type="password" id="resetPassword" placeholder="Mínimo 8 caracteres" autocomplete="new-password" />
-            <button type="button" class="toggle-pw" onclick="togglePw('resetPassword', this)">👁</button>
-          </div>
-        </div>
-        <div id="resetMessage" class="form-success hidden"></div>
-        <div id="resetError" class="form-error hidden"></div>
-        <button type="submit" class="btn btn-primary btn-full">Cambiar contraseña</button>
-      </form>
     </div>
   </main>
 
-  <script src="/static/js/auth.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
