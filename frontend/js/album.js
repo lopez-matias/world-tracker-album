@@ -4,6 +4,7 @@ let countries = [];
 let currentIndex = parseInt(localStorage.getItem('albumIndex') || '0', 10);
 let progress = { total: 0, collected: 0, percentage: 0, by_country: [] };
 let isLoading = false;
+let pendingIndex = null;
 
 // In-memory cache so revisiting a country is instant
 const countryCache = new Map();
@@ -145,6 +146,8 @@ function renderStickers(countryData) {
       renderCountryHeader(countryData);
       renderGlobalProgress();
 
+      if (newHasIt && countryData.collected === countryData.total) launchConfetti();
+
       item.disabled = true;
       try {
         const confirmedHasIt = await toggleSticker(sticker.code);
@@ -210,11 +213,18 @@ async function loadCountry(index) {
   } finally {
     isLoading = false;
     updateNavPosition();
+    if (pendingIndex !== null) {
+      const next = pendingIndex;
+      pendingIndex = null;
+      navigateTo(next);
+    }
   }
 }
 
 function navigateTo(index) {
-  if (index === currentIndex || isLoading) return;
+  if (index < 0 || index >= countries.length) return;
+  if (index === currentIndex && !isLoading) return;
+  if (isLoading) { pendingIndex = index; return; }
   loadCountry(index);
 }
 
@@ -330,6 +340,64 @@ document.addEventListener('touchend', e => {
   else navigateTo(currentIndex - 1);
 }, { passive: true });
 
+// ── Confetti ──────────────────────────────────────────────────────────────────
+function launchConfetti() {
+  const canvas = document.createElement('canvas');
+  canvas.style.cssText = 'position:fixed;inset:0;z-index:998;pointer-events:none;';
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  document.body.appendChild(canvas);
+  const ctx = canvas.getContext('2d');
+
+  const COLORS = ['#e63946','#f97316','#fbbf24','#4ade80','#06b6d4','#ffffff','#c084fc'];
+  const pieces = Array.from({ length: 140 }, () => ({
+    x:  Math.random() * canvas.width,
+    y: -20 - Math.random() * 240,
+    w: 7 + Math.random() * 9,
+    h: 3 + Math.random() * 4,
+    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+    vx: (Math.random() - 0.5) * 2.5,
+    vy: 1.8 + Math.random() * 3.5,
+    angle: Math.random() * Math.PI * 2,
+    spin:  (Math.random() - 0.5) * 0.14,
+    wave:  Math.random() * Math.PI * 2,
+    opacity: 1,
+  }));
+
+  let frame, t = 0;
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    t++;
+    let alive = false;
+    for (const p of pieces) {
+      p.x += p.vx + Math.sin(t * 0.018 + p.wave) * 0.6;
+      p.y += p.vy;
+      p.vy = Math.min(p.vy + 0.055, 9);
+      p.angle += p.spin;
+      if (t > 100) p.opacity -= 0.014;
+      if (p.y < canvas.height + 20 && p.opacity > 0) {
+        alive = true;
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, p.opacity);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle);
+        ctx.fillStyle = p.color;
+        ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+        ctx.restore();
+      }
+    }
+    if (alive) {
+      frame = requestAnimationFrame(draw);
+    } else {
+      canvas.remove();
+    }
+  }
+
+  frame = requestAnimationFrame(draw);
+  setTimeout(() => { cancelAnimationFrame(frame); canvas.remove(); }, 8000);
+}
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 (async function init() {
   const user = await checkAuth();
@@ -340,5 +408,11 @@ document.addEventListener('touchend', e => {
     await loadCountry(currentIndex);
   } catch (err) {
     alert(err.message);
+  } finally {
+    const splash = $('splash');
+    if (splash) {
+      splash.classList.add('splash-out');
+      setTimeout(() => splash.remove(), 700);
+    }
   }
 })();
