@@ -52,6 +52,7 @@ class CountryStickers(BaseModel):
     name: str
     flag_emoji: str
     flag_colors: List[str]
+    group: Optional[str] = None
     stickers: List[StickerOut]
     collected: int
     total: int

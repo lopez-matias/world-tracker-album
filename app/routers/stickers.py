@@ -80,6 +80,7 @@ def get_country_stickers(
         name=country["name"],
         flag_emoji=country["flag_emoji"],
         flag_colors=country["flag_colors"],
+        group=country.get("group"),
         stickers=stickers_out,
         collected=collected,
         total=len(stickers_out),
