@@ -5,14 +5,7 @@ let currentIndex = parseInt(localStorage.getItem('albumIndex') || '0', 10);
 let progress = { total: 0, collected: 0, percentage: 0, by_country: [] };
 let isLoading = false;
 
-// Posiciones con figurita especial/brillante por equipo
-const STAR_CODES = new Set([
-  'ARG17', 'POR12', 'BRA10', 'FRA10', 'EGY10', 'NOR11',
-  'KOR12', 'BEL09', 'ENG10', 'URU10', 'SWE17', 'ESP09',
-]);
-
 const SVG_CHECK = '<svg class="sticker-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
-const SVG_STAR  = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
 
 const $ = id => document.getElementById(id);
 
@@ -126,13 +119,6 @@ function renderStickers(countryData) {
     label.className = 'sticker-label';
     label.textContent = sticker.label;
 
-    if (STAR_CODES.has(sticker.code) || sticker.type === 'star') {
-      const star = document.createElement('span');
-      star.className = 'sticker-star';
-      star.innerHTML = SVG_STAR;
-      item.appendChild(star);
-    }
-
     item.append(circle, code, label);
     item.addEventListener('click', async () => {
       item.disabled = true;
@@ -201,61 +187,66 @@ async function runSearch(query) {
   const q = query.trim().toLowerCase();
   const container = $('searchResults');
   if (!q) { container.innerHTML = ''; return; }
+  container.innerHTML = '';
 
-  // Buscar países por nombre
+  // Country name / code match → just show a "Ver" link, no sticker chips
   const countryMatches = countries
     .map((c, i) => ({ ...c, index: i }))
     .filter(c => c.name.toLowerCase().includes(q) || c.code.toLowerCase().includes(q));
 
-  if (countryMatches.length === 0) {
-    container.innerHTML = '<p class="search-empty">Sin resultados</p>';
-    return;
+  for (const country of countryMatches.slice(0, 6)) {
+    const section = document.createElement('div');
+    section.className = 'search-section';
+    const title = document.createElement('div');
+    title.className = 'search-section-title';
+    title.textContent = country.name;
+    const btn = document.createElement('button');
+    btn.className = 'search-go';
+    btn.textContent = 'Ver';
+    btn.addEventListener('click', () => { closeSearch(); navigateTo(country.index); });
+    title.appendChild(btn);
+    section.appendChild(title);
+    container.appendChild(section);
   }
 
-  container.innerHTML = '';
-  for (const country of countryMatches.slice(0, 8)) {
+  // Sticker code / label match (skip countries already listed above)
+  const shownCodes = new Set(countryMatches.map(c => c.code));
+  for (const [i, country] of countries.entries()) {
+    if (shownCodes.has(country.code)) continue;
     let countryData;
     try { countryData = await fetchCountry(country.code); } catch { continue; }
 
     const stickerMatches = countryData.stickers.filter(s =>
-      s.label.toLowerCase().includes(q) ||
       s.code.toLowerCase().includes(q) ||
-      country.name.toLowerCase().includes(q)
+      (s.label && s.label.toLowerCase().includes(q))
     );
     if (!stickerMatches.length) continue;
 
     const section = document.createElement('div');
     section.className = 'search-section';
-
     const title = document.createElement('div');
     title.className = 'search-section-title';
-    title.textContent = `${country.name}`;
-
+    title.textContent = country.name;
     const btn = document.createElement('button');
     btn.className = 'search-go';
     btn.textContent = 'Ver';
-    btn.addEventListener('click', () => {
-      closeSearch();
-      navigateTo(country.index);
-    });
+    btn.addEventListener('click', () => { closeSearch(); navigateTo(i); });
     title.appendChild(btn);
-
     const grid = document.createElement('div');
     grid.className = 'search-grid';
-
     stickerMatches.forEach(s => {
       const chip = document.createElement('div');
       chip.className = `search-chip${s.has_it ? ' has-it' : ''}`;
-      chip.textContent = `${s.code} · ${s.label}`;
+      chip.textContent = s.label ? `${s.code} · ${s.label}` : s.code;
       grid.appendChild(chip);
     });
-
     section.append(title, grid);
     container.appendChild(section);
+    if (container.children.length >= 8) break;
   }
 
   if (!container.children.length) {
-    container.innerHTML = '<p class="search-empty">Sin resultados para esa figurita</p>';
+    container.innerHTML = '<p class="search-empty">Sin resultados</p>';
   }
 }
 

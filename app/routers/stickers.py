@@ -99,9 +99,23 @@ def toggle_sticker(
         .first()
     )
     if not row:
-        raise HTTPException(status_code=404, detail="Sticker not found")
-
-    row.has_it = not row.has_it
-    row.updated_at = datetime.utcnow()
-    db.commit()
+        sticker_info = next(
+            (s for s in get_all_stickers() if s["sticker_code"] == body.sticker_code),
+            None,
+        )
+        if not sticker_info:
+            raise HTTPException(status_code=404, detail="Sticker not found")
+        row = UserSticker(
+            user_id=user_id,
+            country_code=sticker_info["country_code"],
+            sticker_code=body.sticker_code,
+            has_it=True,
+        )
+        db.add(row)
+        db.commit()
+        db.refresh(row)
+    else:
+        row.has_it = not row.has_it
+        row.updated_at = datetime.utcnow()
+        db.commit()
     return {"sticker_code": row.sticker_code, "has_it": row.has_it}

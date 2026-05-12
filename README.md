@@ -1,125 +1,196 @@
-# Mundial 2026 — Álbum de Figuritas Tracker
+# World Cup 2026 — Panini Sticker Album Tracker
 
-Seguí tu progreso del álbum Panini del Mundial 2026. 48 selecciones, 20 figuritas cada una, 960 en total.
+A mobile-first web app to track your FIFA World Cup 2026 Panini sticker collection. Navigate through all 50 sections — the FIFA intro, 48 national teams across 12 groups, and the Coca-Cola closing section — and mark each sticker as you collect it.
 
-## Instalación local
+![Tech Stack](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
+![Database](https://img.shields.io/badge/Database-SQLite%20%2F%20PostgreSQL-336791?style=flat-square&logo=postgresql)
+![Deploy](https://img.shields.io/badge/Deploy-Vercel-000000?style=flat-square&logo=vercel)
+
+---
+
+## Features
+
+- **Full Panini album** — 50 sections, 1,000+ stickers in real album order
+- **Per-country dynamic backgrounds** — each page adapts its color palette to the national flag
+- **Sticker search** — find any country or sticker code instantly
+- **Global & per-country progress tracking** — visual progress bars updated in real time
+- **User accounts** — register, log in, and keep your collection synced across devices
+- **Mobile-first design** — swipe between countries, large touch targets, responsive on any screen
+- **No dependencies on external icon libraries** — pure SVG icons throughout
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Backend | [FastAPI](https://fastapi.tiangolo.com/) + Python 3.11 |
+| ORM | [SQLAlchemy](https://www.sqlalchemy.org/) |
+| Auth | JWT via HTTP-only cookies (bcrypt password hashing) |
+| Database | SQLite (development) / PostgreSQL via [Neon](https://neon.tech) (production) |
+| Frontend | Vanilla JS, CSS custom properties, no frameworks |
+| Deployment | [Vercel](https://vercel.com) (serverless Python) |
+
+---
+
+## Local Development
+
+### Prerequisites
+
+- Python 3.11+
+- Git
+
+### Setup
 
 ```bash
-# 1. Clonar y entrar al directorio
-cd mundial2026-tracker
+# 1. Clone the repository
+git clone https://github.com/<your-username>/world-tracker-album.git
+cd world-tracker-album
 
-# 2. Crear entorno virtual
+# 2. Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate        # macOS / Linux
+# venv\Scripts\activate         # Windows
 
-# 3. Instalar dependencias
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Configurar variables de entorno
+# 4. Configure environment variables
 cp .env.example .env
-# Editar .env con tus valores
+# Open .env and fill in the values (see Environment Variables below)
 
-# 5. Correr el servidor
+# 5. Start the development server
 uvicorn app.main:app --reload
 ```
 
-Abrí http://localhost:8000
+Open [http://localhost:8000](http://localhost:8000) in your browser.
 
-## Configurar SendGrid (opcional)
+The SQLite database (`mundial2026.db`) is created automatically on first run.
 
-1. Crear cuenta en [sendgrid.com](https://sendgrid.com)
-2. Generar API Key en Settings → API Keys
-3. Verificar tu dominio o email remitente
-4. Agregar al `.env`:
-   ```
-   SENDGRID_API_KEY=SG.tu-api-key
-   FROM_EMAIL=noreply@tudominio.com
-   APP_URL=https://tudominio.com
-   ```
+---
 
-Sin SendGrid configurado, los links de recuperación se imprimen en la consola del servidor (útil para desarrollo).
+## Environment Variables
 
-## Actualizar jugadores en stickers.json
+| Variable | Description | Example |
+|---|---|---|
+| `SECRET_KEY` | JWT signing secret — generate with `openssl rand -hex 32` | `a1b2c3...` |
+| `DATABASE_URL` | SQLAlchemy connection string | `sqlite:///./mundial2026.db` |
+| `APP_URL` | Your app's public URL (used for CORS) | `http://localhost:8000` |
 
-Editá `data/stickers.json`. Cada país tiene esta estructura:
+For PostgreSQL (Neon or any provider):
+
+```
+DATABASE_URL=postgresql://user:password@ep-xxx.us-east-2.aws.neon.tech/mundial2026?sslmode=require
+```
+
+---
+
+## Deploying to Vercel
+
+This project is configured for zero-config deployment on Vercel using `@vercel/python`.
+
+1. Push your repository to GitHub.
+2. Import the project on [vercel.com](https://vercel.com).
+3. Add the environment variables in the Vercel dashboard under **Settings → Environment Variables**:
+   - `SECRET_KEY`
+   - `DATABASE_URL` (must be a PostgreSQL URL — SQLite is not supported on Vercel's read-only filesystem)
+   - `APP_URL` (your `*.vercel.app` URL)
+4. Deploy. Every push to `main` triggers an automatic redeploy.
+
+> **Note:** For the database, use [Neon](https://neon.tech) — it offers a free PostgreSQL tier that pairs perfectly with Vercel.
+
+---
+
+## Project Structure
+
+```
+world-tracker-album/
+├── api/
+│   └── index.py              # Vercel serverless entry point
+├── app/
+│   ├── main.py               # FastAPI app, static file mounts, CORS
+│   ├── config.py             # Settings loaded from .env
+│   ├── database.py           # SQLAlchemy engine & session
+│   ├── models.py             # User, UserSticker ORM models
+│   ├── schemas.py            # Pydantic request / response schemas
+│   ├── auth.py               # JWT creation & verification, bcrypt
+│   ├── stickers_data.py      # Loads and caches stickers.json
+│   └── routers/
+│       ├── auth.py           # POST /api/auth/{register,login,logout,me}
+│       ├── stickers.py       # GET /api/stickers/{progress,country}, POST /toggle
+│       └── users.py          # PATCH /api/users/{profile,password}
+├── data/
+│   └── stickers.json         # 50 sections — FIFA intro, 48 teams, Coca-Cola
+├── frontend/
+│   ├── index.html            # Login & registration page
+│   ├── album.html            # Main album view
+│   ├── profile.html          # User profile & settings
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       ├── auth.js
+│       ├── album.js
+│       └── profile.js
+├── .env.example
+├── requirements.txt
+└── vercel.json
+```
+
+---
+
+## API Overview
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/auth/register` | Create a new account |
+| `POST` | `/api/auth/login` | Log in (sets HTTP-only cookie) |
+| `POST` | `/api/auth/logout` | Clear auth cookie |
+| `GET` | `/api/auth/me` | Current authenticated user |
+| `GET` | `/api/stickers/progress` | Global collection progress |
+| `GET` | `/api/stickers/{code}` | Stickers for a specific country |
+| `POST` | `/api/stickers/toggle` | Mark / unmark a sticker as collected |
+| `PATCH` | `/api/users/profile` | Update username |
+| `PATCH` | `/api/users/password` | Change password |
+
+---
+
+## Sticker Data Format
+
+Each entry in `data/stickers.json` follows this structure:
 
 ```json
 {
   "code": "ARG",
   "name": "Argentina",
   "flag_emoji": "🇦🇷",
-  "flag_colors": ["#74ACDF", "#FFFFFF"],
+  "flag_colors": ["#74ACDF", "#FFFFFF", "#F6B40E"],
+  "group": "J",
   "stickers": [
-    {"code": "ARG1",  "label": "Escudo",   "type": "badge"},
-    {"code": "ARG2",  "label": "Foto grupal", "type": "group"},
-    {"code": "ARG17", "label": "L. Messi", "type": "player"}
+    { "code": "ARG01", "label": "Escudo",         "type": "badge"   },
+    { "code": "ARG02", "label": "",               "type": "player"  },
+    { "code": "ARG13", "label": "Foto del equipo","type": "group"   }
   ]
 }
 ```
 
-Los `type` disponibles son `badge`, `group` y `player`.  
-Los códigos de figurita deben ser únicos globalmente.
+| Field | Description |
+|---|---|
+| `code` | Unique 3-letter country code |
+| `flag_colors` | Array of hex colors used for dynamic background |
+| `group` | World Cup group (A–L) |
+| `stickers[].type` | `badge`, `player`, `group`, or `special` |
 
-## Deploy en Railway
+---
 
-1. Push del repo a GitHub
-2. Crear nuevo proyecto en [railway.app](https://railway.app)
-3. Conectar el repo
-4. Agregar las variables de entorno en Railway
-5. El `Procfile` o el comando de inicio: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+## Security Notes
 
-## Deploy en Vercel
+- Never commit your `.env` file. It is listed in `.gitignore`.
+- If you accidentally expose a `SECRET_KEY` or any API key, rotate it immediately.
+- Generate a strong secret with: `openssl rand -hex 32`
 
-Vercel no soporta FastAPI directamente. Usá Railway, Render o Fly.io para apps Python con SQLite.
+---
 
+## License
 
-## Evitar publicar `.env` en GitHub
-
-El archivo `.env` contiene secretos locales y no debe versionarse. Este proyecto ignora `.env` y variantes locales desde `.gitignore`; solo se debe commitear `.env.example` con valores de ejemplo.
-
-Si alguna vez agregaste `.env` al índice de Git, quitá el tracking sin borrar tu copia local:
-
-```bash
-git rm --cached .env
-git commit -m "Stop tracking local env file"
-```
-
-Si el `.env` ya fue publicado con secretos reales, rotá esos secretos inmediatamente (por ejemplo `SECRET_KEY`, API keys y credenciales) y considerá limpiar el historial del repositorio antes de volver a publicar.
-
-## Generar SECRET_KEY
-
-```bash
-openssl rand -hex 32
-```
-
-## Estructura del proyecto
-
-```
-mundial2026-tracker/
-├── app/
-│   ├── main.py           # FastAPI app, rutas de archivos estáticos
-│   ├── database.py       # Conexión SQLAlchemy
-│   ├── models.py         # User, UserSticker
-│   ├── schemas.py        # Pydantic models
-│   ├── auth.py           # JWT, bcrypt
-│   ├── config.py         # Settings desde .env
-│   ├── email_service.py  # SendGrid
-│   ├── stickers_data.py  # Lee stickers.json
-│   └── routers/
-│       ├── auth.py       # /api/auth/*
-│       ├── stickers.py   # /api/stickers/*
-│       └── users.py      # /api/users/*
-├── frontend/
-│   ├── index.html        # Login / Register / Reset password
-│   ├── album.html        # Álbum principal
-│   ├── profile.html      # Perfil de usuario
-│   ├── css/styles.css
-│   └── js/
-│       ├── auth.js
-│       ├── album.js
-│       └── profile.js
-├── data/
-│   └── stickers.json     # 48 países × 20 figuritas
-├── .env.example
-├── requirements.txt
-└── README.md# world-tacker-album
+MIT
