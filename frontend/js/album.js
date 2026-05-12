@@ -5,6 +5,9 @@ let currentIndex = parseInt(localStorage.getItem('albumIndex') || '0', 10);
 let progress = { total: 0, collected: 0, percentage: 0, by_country: [] };
 let isLoading = false;
 
+// In-memory cache so revisiting a country is instant
+const countryCache = new Map();
+
 const SVG_CHECK = '<svg class="sticker-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
 
 const $ = id => document.getElementById(id);
@@ -27,9 +30,12 @@ async function fetchProgress() {
 }
 
 async function fetchCountry(code) {
+  if (countryCache.has(code)) return countryCache.get(code);
   const res = await fetch(`/api/stickers/${code}`, { credentials: 'same-origin' });
   if (!res.ok) throw new Error('No se pudo cargar el pais.');
-  return res.json();
+  const data = await res.json();
+  countryCache.set(code, data);
+  return data;
 }
 
 async function toggleSticker(stickerCode) {
@@ -120,24 +126,75 @@ function renderStickers(countryData) {
     label.textContent = sticker.label;
 
     item.append(circle, code, label);
+
     item.addEventListener('click', async () => {
+      const newHasIt = !sticker.has_it;
+      const delta = newHasIt ? 1 : -1;
+
+      // Optimistic update — instant visual feedback
+      sticker.has_it = newHasIt;
+      countryData.collected += delta;
+      progress.collected += delta;
+      const countryEntry = countries.find(c => c.code === countryData.code);
+      if (countryEntry) countryEntry.collected += delta;
+
+      item.classList.toggle('has-it', newHasIt);
+      item.setAttribute('aria-pressed', String(newHasIt));
+      circle.classList.toggle('collected', newHasIt);
+      circle.innerHTML = newHasIt ? SVG_CHECK : '';
+      renderCountryHeader(countryData);
+      renderGlobalProgress();
+
       item.disabled = true;
       try {
-        const hasIt = await toggleSticker(sticker.code);
-        sticker.has_it = hasIt;
-        await loadCountry(currentIndex, { refreshProgress: true });
+        const confirmedHasIt = await toggleSticker(sticker.code);
+        // If server disagrees (e.g. race condition), reconcile
+        if (confirmedHasIt !== newHasIt) {
+          const fix = confirmedHasIt ? 1 : -1;
+          sticker.has_it = confirmedHasIt;
+          countryData.collected += fix - delta;
+          progress.collected += fix - delta;
+          if (countryEntry) countryEntry.collected += fix - delta;
+          item.classList.toggle('has-it', confirmedHasIt);
+          item.setAttribute('aria-pressed', String(confirmedHasIt));
+          circle.classList.toggle('collected', confirmedHasIt);
+          circle.innerHTML = confirmedHasIt ? SVG_CHECK : '';
+          renderCountryHeader(countryData);
+          renderGlobalProgress();
+        }
       } catch (err) {
+        // Revert optimistic update
+        sticker.has_it = !newHasIt;
+        countryData.collected -= delta;
+        progress.collected -= delta;
+        if (countryEntry) countryEntry.collected -= delta;
+        item.classList.toggle('has-it', !newHasIt);
+        item.setAttribute('aria-pressed', String(!newHasIt));
+        circle.classList.toggle('collected', !newHasIt);
+        circle.innerHTML = !newHasIt ? SVG_CHECK : '';
+        renderCountryHeader(countryData);
+        renderGlobalProgress();
         alert(err.message);
       } finally {
         item.disabled = false;
       }
     });
+
     grid.appendChild(item);
   });
 }
 
+// ── Preload ───────────────────────────────────────────────────────────────────
+function preloadAdjacent(index) {
+  [index - 1, index + 1].forEach(i => {
+    if (i >= 0 && i < countries.length && !countryCache.has(countries[i].code)) {
+      fetchCountry(countries[i].code).catch(() => {});
+    }
+  });
+}
+
 // ── Carga de país ─────────────────────────────────────────────────────────────
-async function loadCountry(index, options = {}) {
+async function loadCountry(index) {
   if (!countries.length || isLoading) return;
   isLoading = true;
   updateNavPosition();
@@ -147,7 +204,7 @@ async function loadCountry(index, options = {}) {
     const countryData = await fetchCountry(countries[currentIndex].code);
     renderCountryHeader(countryData);
     renderStickers(countryData);
-    if (options.refreshProgress) await fetchProgress();
+    preloadAdjacent(currentIndex);
   } catch (err) {
     alert(err.message);
   } finally {
@@ -162,25 +219,14 @@ function navigateTo(index) {
 }
 
 // ── Buscador ──────────────────────────────────────────────────────────────────
-let allStickersCache = null;
-
 function openSearch() {
   $('searchOverlay').classList.add('active');
   $('searchInput').focus();
-  if (!allStickersCache) buildSearchCache();
 }
 function closeSearch() {
   $('searchOverlay').classList.remove('active');
   $('searchInput').value = '';
   $('searchResults').innerHTML = '';
-}
-
-function buildSearchCache() {
-  allStickersCache = [];
-  countries.forEach(country => {
-    // Usamos el progreso ya cargado para encontrar el código
-    allStickersCache.push({ type: 'country', code: country.code, name: country.name, index: countries.indexOf(country) });
-  });
 }
 
 async function runSearch(query) {
@@ -189,7 +235,6 @@ async function runSearch(query) {
   if (!q) { container.innerHTML = ''; return; }
   container.innerHTML = '';
 
-  // Country name / code match → just show a "Ver" link, no sticker chips
   const countryMatches = countries
     .map((c, i) => ({ ...c, index: i }))
     .filter(c => c.name.toLowerCase().includes(q) || c.code.toLowerCase().includes(q));
@@ -209,7 +254,6 @@ async function runSearch(query) {
     container.appendChild(section);
   }
 
-  // Sticker code / label match (skip countries already listed above)
   const shownCodes = new Set(countryMatches.map(c => c.code));
   for (const [i, country] of countries.entries()) {
     if (shownCodes.has(country.code)) continue;
