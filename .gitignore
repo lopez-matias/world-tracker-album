@@ -1,0 +1,19 @@
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Databases generated in development
+*.db
+*.sqlite
+*.sqlite3
+
+# Tooling / OS
+.pytest_cache/
+.DS_Store

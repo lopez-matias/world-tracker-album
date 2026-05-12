@@ -1,11 +1,12 @@
 from datetime import datetime
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
+from ..auth import get_current_user_id
 from ..database import get_db
 from ..models import UserSticker
-from ..schemas import CountryStickers, Progress, StickerOut, ToggleSticker, CountryProgress
-from ..auth import get_current_user_id
+from ..schemas import CountryProgress, CountryStickers, Progress, StickerOut, ToggleSticker
 from ..stickers_data import get_countries, get_country
 
 router = APIRouter(prefix="/api/stickers", tags=["stickers"])
@@ -15,25 +16,28 @@ router = APIRouter(prefix="/api/stickers", tags=["stickers"])
 def get_progress(user_id: int = Depends(get_current_user_id), db: Session = Depends(get_db)):
     countries = get_countries()
     rows = db.query(UserSticker).filter(UserSticker.user_id == user_id).all()
-    by_code: dict[str, dict] = {}
-    for r in rows:
-        entry = by_code.setdefault(r.country_code, {"collected": 0, "total": 0})
+    by_code: dict[str, dict[str, int]] = {}
+    for row in rows:
+        entry = by_code.setdefault(row.country_code, {"collected": 0, "total": 0})
         entry["total"] += 1
-        if r.has_it:
+        if row.has_it:
             entry["collected"] += 1
-
-    total = sum(v["total"] for v in by_code.values())
-    collected = sum(v["collected"] for v in by_code.values())
 
     by_country = []
     for country in countries:
-        info = by_code.get(country["code"], {"collected": 0, "total": 20})
-        by_country.append(CountryProgress(
-            code=country["code"],
-            name=country["name"],
-            total=info["total"],
-            collected=info["collected"],
-        ))
+        fallback_total = len(country["stickers"])
+        info = by_code.get(country["code"], {"collected": 0, "total": fallback_total})
+        by_country.append(
+            CountryProgress(
+                code=country["code"],
+                name=country["name"],
+                total=info["total"] or fallback_total,
+                collected=info["collected"],
+            )
+        )
+
+    total = sum(country.total for country in by_country)
+    collected = sum(country.collected for country in by_country)
 
     return Progress(
         total=total,
@@ -58,18 +62,18 @@ def get_country_stickers(
         .filter(UserSticker.user_id == user_id, UserSticker.country_code == country_code.upper())
         .all()
     )
-    has_it_map = {r.sticker_code: r.has_it for r in rows}
+    has_it_map = {row.sticker_code: row.has_it for row in rows}
 
     stickers_out = [
         StickerOut(
-            code=s["code"],
-            label=s["label"],
-            type=s["type"],
-            has_it=has_it_map.get(s["code"], False),
+            code=sticker["code"],
+            label=sticker["label"],
+            type=sticker["type"],
+            has_it=has_it_map.get(sticker["code"], False),
         )
-        for s in country["stickers"]
+        for sticker in country["stickers"]
     ]
-    collected = sum(1 for s in stickers_out if s.has_it)
+    collected = sum(1 for sticker in stickers_out if sticker.has_it)
 
     return CountryStickers(
         code=country["code"],
@@ -98,3 +102,5 @@ def toggle_sticker(
 
     row.has_it = not row.has_it
     row.updated_at = datetime.utcnow()
+    db.commit()
+    return {"sticker_code": row.sticker_code, "has_it": row.has_it}

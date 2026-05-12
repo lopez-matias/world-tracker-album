@@ -4,8 +4,9 @@ const $ = id => document.getElementById(id);
 
 function togglePw(inputId, btn) {
   const input = $(inputId);
-  if (input.type === 'password') { input.type = 'text'; btn.style.opacity = '0.9'; }
-  else { input.type = 'password'; btn.style.opacity = '0.5'; }
+  const show = input.type === 'password';
+  input.type = show ? 'text' : 'password';
+  btn.style.opacity = show ? '0.9' : '0.6';
 }
 window.togglePw = togglePw;
 
@@ -14,48 +15,54 @@ function showMsg(id, msg, isError) {
   el.textContent = msg;
   el.className = isError ? 'form-error' : 'form-success';
 }
-function hideMsg(...ids) { ids.forEach(id => $(id).classList.add('hidden')); }
+function hideMsg(...ids) {
+  ids.forEach(id => {
+    const el = $(id);
+    el.textContent = '';
+    el.classList.add('hidden');
+  });
+}
 
 async function api(path, method, body) {
-  const res = await fetch(path, {
+  const options = {
     method,
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
     credentials: 'same-origin',
-  });
+  };
+  if (body !== undefined) options.body = JSON.stringify(body);
+  const res = await fetch(path, options);
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data.detail || 'Error desconocido');
   return data;
 }
 
-// ── Auth guard + load user ────────────────────────────────────────────────────
 async function loadUser() {
   const res = await fetch('/api/auth/me', { credentials: 'same-origin' });
-  if (!res.ok) { location.href = '/'; return null; }
+  if (!res.ok) {
+    location.href = '/';
+    return null;
+  }
   return res.json();
 }
 
-// ── Stats ─────────────────────────────────────────────────────────────────────
 async function loadStats() {
   const res = await fetch('/api/stickers/progress', { credentials: 'same-origin' });
   if (!res.ok) return;
   const data = await res.json();
+  const percentage = data.total ? (data.collected / data.total * 100) : 0;
   $('statCollected').textContent = `${data.collected}/${data.total}`;
-  $('statPercent').textContent = `${data.percentage}%`;
-  const complete = data.by_country.filter(c => c.collected === c.total && c.total > 0).length;
-  $('statCountries').textContent = complete;
-  $('statProgressFill').style.width = data.percentage + '%';
+  $('statPercent').textContent = `${percentage.toFixed(1)}%`;
+  $('statCountries').textContent = data.by_country.filter(country => country.collected === country.total && country.total > 0).length;
+  $('statProgressFill').style.width = `${percentage}%`;
 }
 
-// ── Username form ─────────────────────────────────────────────────────────────
 const usernameBtn = $('usernameForm').querySelector('button[type="submit"]');
 usernameBtn.dataset.label = usernameBtn.textContent;
-
-$('usernameForm').addEventListener('submit', async e => {
-  e.preventDefault();
+$('usernameForm').addEventListener('submit', async event => {
+  event.preventDefault();
   hideMsg('usernameMessage', 'usernameError');
   const username = $('newUsername').value.trim();
-  if (!username) { showMsg('usernameError', 'Ingresá un nombre de usuario.', true); return; }
+  if (!username) return showMsg('usernameError', 'Ingresá un nombre de usuario.', true);
   usernameBtn.disabled = true;
   usernameBtn.textContent = 'Guardando...';
   try {
@@ -69,23 +76,15 @@ $('usernameForm').addEventListener('submit', async e => {
   }
 });
 
-// ── Password form ─────────────────────────────────────────────────────────────
 const passwordBtn = $('passwordForm').querySelector('button[type="submit"]');
 passwordBtn.dataset.label = passwordBtn.textContent;
-
-$('passwordForm').addEventListener('submit', async e => {
-  e.preventDefault();
+$('passwordForm').addEventListener('submit', async event => {
+  event.preventDefault();
   hideMsg('passwordMessage', 'passwordError');
   const current_password = $('currentPw').value;
   const new_password = $('newPw').value;
-  if (!current_password || !new_password) {
-    showMsg('passwordError', 'Completá todos los campos.', true);
-    return;
-  }
-  if (new_password.length < 8) {
-    showMsg('passwordError', 'La nueva contraseña debe tener al menos 8 caracteres.', true);
-    return;
-  }
+  if (!current_password || !new_password) return showMsg('passwordError', 'Completá todos los campos.', true);
+  if (new_password.length < 8) return showMsg('passwordError', 'La nueva contraseña debe tener al menos 8 caracteres.', true);
   passwordBtn.disabled = true;
   passwordBtn.textContent = 'Guardando...';
   try {
@@ -98,3 +97,16 @@ $('passwordForm').addEventListener('submit', async e => {
     passwordBtn.disabled = false;
     passwordBtn.textContent = passwordBtn.dataset.label;
   }
+});
+
+$('logoutBtn').addEventListener('click', async () => {
+  await api('/api/auth/logout', 'POST');
+  location.href = '/';
+});
+
+(async function init() {
+  const user = await loadUser();
+  if (!user) return;
+  $('newUsername').value = user.username;
+  await loadStats();
+})();
