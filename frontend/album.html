@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundial 2026 — Álbum</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="album-page">
+
+  <!-- Animated background layer -->
+  <div id="countryBg" class="country-bg"></div>
+  <div id="flagBg" class="flag-bg"></div>
+
+  <!-- Header -->
+  <header class="album-header">
+    <div class="header-left">
+      <span class="header-trophy">🏆</span>
+      <span class="header-title">Mundial 2026</span>
+    </div>
+    <div class="header-center">
+      <div class="global-progress">
+        <div class="global-progress-bar">
+          <div id="globalProgressFill" class="global-progress-fill"></div>
+        </div>
+        <span id="globalProgressText" class="global-progress-text">0 / 980 · 0%</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <a href="/profile" class="btn-profile" title="Mi perfil">
+        <span id="headerUsername">...</span>
+        <span class="profile-icon">👤</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Album View -->
+  <main class="album-main">
+    <div class="country-view">
+
+      <!-- Country header -->
+      <div class="country-header">
+        <div class="country-flag-emoji" id="countryFlagEmoji"></div>
+        <div class="country-info">
+          <h2 id="countryName" class="country-name"></h2>
+          <div class="country-progress-wrap">
+            <div class="country-progress-bar">
+              <div id="countryProgressFill" class="country-progress-fill"></div>
+            </div>
+            <span id="countryProgressText" class="country-progress-text">0/20</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sticker grid -->
+      <div id="stickerGrid" class="sticker-grid"></div>
+
+    </div>
+  </main>
+
+  <!-- Navigation -->
+  <nav class="album-nav">
+    <button id="prevBtn" class="nav-btn" aria-label="País anterior">←</button>
+    <div class="nav-center">
+      <span id="navPosition" class="nav-position">1 / 48</span>
+      <div class="nav-dots" id="navDots"></div>
+    </div>
+    <button id="nextBtn" class="nav-btn" aria-label="País siguiente">→</button>
+  </nav>
+
+  <script src="js/album.js"></script>
+</body>
+</html>

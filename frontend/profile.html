@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundial 2026 — Perfil</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="profile-page">
+
+  <header class="profile-header">
+    <a href="/album" class="btn-back">← Volver al álbum</a>
+    <h1 class="profile-title">Mi Perfil</h1>
+    <button id="logoutBtn" class="btn btn-ghost">Cerrar sesión</button>
+  </header>
+
+  <main class="profile-main">
+
+    <!-- Stats -->
+    <section class="profile-card stats-card">
+      <h2 class="card-title">Mis estadísticas</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span id="statCollected" class="stat-value">—</span>
+          <span class="stat-label">Figuritas</span>
+        </div>
+        <div class="stat-item">
+          <span id="statPercent" class="stat-value">—</span>
+          <span class="stat-label">Completado</span>
+        </div>
+        <div class="stat-item">
+          <span id="statCountries" class="stat-value">—</span>
+          <span class="stat-label">Países completos</span>
+        </div>
+      </div>
+      <div class="stat-progress-wrap">
+        <div class="stat-progress-bar">
+          <div id="statProgressFill" class="stat-progress-fill"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Change username -->
+    <section class="profile-card">
+      <h2 class="card-title">Cambiar nombre de usuario</h2>
+      <form id="usernameForm" class="profile-form">
+        <div class="form-group">
+          <label for="newUsername">Nuevo nombre de usuario</label>
+          <input type="text" id="newUsername" placeholder="usuario123" maxlength="20" autocomplete="username" />
+          <span class="form-hint">3-20 caracteres: letras, números, - y _</span>
+        </div>
+        <div id="usernameMessage" class="form-success hidden"></div>
+        <div id="usernameError" class="form-error hidden"></div>
+        <button type="submit" class="btn btn-primary">Guardar usuario</button>
+      </form>
+    </section>
+
+    <!-- Change password -->
+    <section class="profile-card">
+      <h2 class="card-title">Cambiar contraseña</h2>
+      <form id="passwordForm" class="profile-form">
+        <div class="form-group">
+          <label for="currentPw">Contraseña actual</label>
+          <div class="input-wrapper">
+            <input type="password" id="currentPw" placeholder="••••••••" autocomplete="current-password" />
+            <button type="button" class="toggle-pw" onclick="togglePw('currentPw', this)">👁</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="newPw">Nueva contraseña</label>
+          <div class="input-wrapper">
+            <input type="password" id="newPw" placeholder="Mínimo 8 caracteres" autocomplete="new-password" />
+            <button type="button" class="toggle-pw" onclick="togglePw('newPw', this)">👁</button>
+          </div>
+        </div>
+        <div id="passwordMessage" class="form-success hidden"></div>
+        <div id="passwordError" class="form-error hidden"></div>
+        <button type="submit" class="btn btn-primary">Cambiar contraseña</button>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>

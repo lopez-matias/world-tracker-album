@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundial 2026 — Álbum de Figuritas</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="auth-page">
+  <div class="auth-bg">
+    <div class="auth-orb auth-orb-1"></div>
+    <div class="auth-orb auth-orb-2"></div>
+  </div>
+
+  <main class="auth-container">
+    <div class="auth-card">
+      <div class="auth-logo">
+        <span class="auth-trophy">🏆</span>
+        <h1>Mundial 2026</h1>
+        <p class="auth-subtitle">Álbum de Figuritas</p>
+      </div>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="auth-form active">
+        <div class="form-group">
+          <label for="loginInput">Usuario o email</label>
+          <input type="text" id="loginInput" placeholder="usuario o email@ejemplo.com" autocomplete="username" />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Contraseña</label>
+          <div class="input-wrapper">
+            <input type="password" id="loginPassword" placeholder="••••••••" autocomplete="current-password" />
+            <button type="button" class="toggle-pw" onclick="togglePw('loginPassword', this)">👁</button>
+          </div>
+        </div>
+        <div class="form-row">
+          <label class="checkbox-label">
+            <input type="checkbox" id="rememberMe" />
+            <span>Recordarme 30 días</span>
+          </label>
+          <a href="#" class="link" id="forgotLink">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div id="loginError" class="form-error hidden"></div>
+        <button type="submit" class="btn btn-primary btn-full">Ingresar</button>
+        <p class="form-switch">¿No tenés cuenta? <a href="#" class="link" id="toRegister">Registrate</a></p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="registerForm" class="auth-form">
+        <div class="form-group">
+          <label for="regUsername">Nombre de usuario</label>
+          <input type="text" id="regUsername" placeholder="usuario123" autocomplete="username" maxlength="20" />
+          <span class="form-hint">3-20 caracteres: letras, números, - y _</span>
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Email</label>
+          <input type="email" id="regEmail" placeholder="vos@ejemplo.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="regPassword">Contraseña</label>
+          <div class="input-wrapper">
+            <input type="password" id="regPassword" placeholder="Mínimo 8 caracteres" autocomplete="new-password" />
+            <button type="button" class="toggle-pw" onclick="togglePw('regPassword', this)">👁</button>
+          </div>
+        </div>
+        <div id="registerError" class="form-error hidden"></div>
+        <button type="submit" class="btn btn-primary btn-full">Crear cuenta</button>
+        <p class="form-switch">¿Ya tenés cuenta? <a href="#" class="link" id="toLogin">Iniciá sesión</a></p>
+      </form>
+
+      <!-- Forgot Password Form -->
+      <form id="forgotForm" class="auth-form">
+        <div class="form-group">
+          <label for="forgotEmail">Email de tu cuenta</label>
+          <input type="email" id="forgotEmail" placeholder="vos@ejemplo.com" />
+        </div>
+        <div id="forgotMessage" class="form-success hidden"></div>
+        <div id="forgotError" class="form-error hidden"></div>
+        <button type="submit" class="btn btn-primary btn-full">Enviar link de recuperación</button>
+        <p class="form-switch"><a href="#" class="link" id="backToLogin">← Volver al login</a></p>
+      </form>
+
+      <!-- Reset Password Form -->
+      <form id="resetForm" class="auth-form">
+        <h2 class="form-title">Nueva contraseña</h2>
+        <div class="form-group">
+          <label for="resetPassword">Nueva contraseña</label>
+          <div class="input-wrapper">
+            <input type="password" id="resetPassword" placeholder="Mínimo 8 caracteres" autocomplete="new-password" />
+            <button type="button" class="toggle-pw" onclick="togglePw('resetPassword', this)">👁</button>
+          </div>
+        </div>
+        <div id="resetMessage" class="form-success hidden"></div>
+        <div id="resetError" class="form-error hidden"></div>
+        <button type="submit" class="btn btn-primary btn-full">Cambiar contraseña</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/auth.js"></script>
