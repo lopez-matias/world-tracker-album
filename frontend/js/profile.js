@@ -23,6 +23,13 @@ function hideMsg(...ids) {
   });
 }
 
+function parseError(data) {
+  if (!data.detail) return 'Error desconocido';
+  if (typeof data.detail === 'string') return data.detail;
+  if (Array.isArray(data.detail)) return data.detail.map(e => e.msg).join('. ');
+  return 'Error desconocido';
+}
+
 async function api(path, method, body) {
   const options = {
     method,
@@ -32,7 +39,7 @@ async function api(path, method, body) {
   if (body !== undefined) options.body = JSON.stringify(body);
   const res = await fetch(path, options);
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data.detail || 'Error desconocido');
+  if (!res.ok) throw new Error(parseError(data));
   return data;
 }
 

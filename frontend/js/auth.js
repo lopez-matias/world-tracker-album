@@ -34,6 +34,13 @@ function togglePw(inputId, btn) {
 }
 window.togglePw = togglePw;
 
+function parseError(data) {
+  if (!data.detail) return 'Error desconocido';
+  if (typeof data.detail === 'string') return data.detail;
+  if (Array.isArray(data.detail)) return data.detail.map(e => e.msg).join('. ');
+  return 'Error desconocido';
+}
+
 async function api(path, body) {
   const res = await fetch(path, {
     method: 'POST',
@@ -42,7 +49,7 @@ async function api(path, body) {
     credentials: 'same-origin',
   });
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data.detail || 'Error desconocido');
+  if (!res.ok) throw new Error(parseError(data));
   return data;
 }
 
