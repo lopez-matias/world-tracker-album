@@ -1,19 +1,32 @@
 import uuid
 from datetime import datetime, timedelta
-from fastapi import APIRouter, Depends, HTTPException, Response, status, Request
+
+from fastapi import APIRouter, Depends, HTTPException, Request, Response
 from sqlalchemy.orm import Session
 from slowapi import Limiter
 from slowapi.util import get_remote_address
 
+from ..auth import create_access_token, get_current_user_id, hash_password, verify_password
 from ..database import get_db
+from ..email_service import send_password_reset_email
 from ..models import User, UserSticker
 from ..schemas import ForgotPassword, ResetPassword, UserCreate, UserLogin, UserOut
-from ..auth import create_access_token, hash_password, verify_password, get_current_user_id
-from ..email_service import send_password_reset_email
 from ..stickers_data import get_all_stickers
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 limiter = Limiter(key_func=get_remote_address)
+
+
+def _set_cookie(response: Response, token: str, remember: bool = False) -> None:
+    max_age = 60 * 60 * 24 * 30 if remember else None
+    response.set_cookie(
+        key="access_token",
+        value=f"Bearer {token}",
+        httponly=True,
+        samesite="lax",
+        secure=False,
+        max_age=max_age,
+    )
 
 
 @router.post("/register", response_model=UserOut)
@@ -31,10 +44,9 @@ def register(body: UserCreate, response: Response, db: Session = Depends(get_db)
     db.add(user)
     db.flush()
 
-    all_stickers = get_all_stickers()
     sticker_records = [
         UserSticker(user_id=user.id, country_code=s["country_code"], sticker_code=s["sticker_code"])
-        for s in all_stickers
+        for s in get_all_stickers()
     ]
     db.bulk_save_objects(sticker_records)
     db.commit()
@@ -62,7 +74,7 @@ def login(request: Request, body: UserLogin, response: Response, db: Session = D
 
 @router.post("/logout")
 def logout(response: Response):
-    response.delete_cookie("access_token")
+    response.delete_cookie("access_token", samesite="lax")
     return {"detail": "Logged out"}
 
 
@@ -98,3 +110,6 @@ def reset_password(body: ResetPassword, db: Session = Depends(get_db)):
 
     user.hashed_password = hash_password(body.new_password)
     user.reset_token = None
+    user.reset_token_expires = None
+    db.commit()
+    return {"detail": "Password updated successfully"}

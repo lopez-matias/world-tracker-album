@@ -1,0 +1,5357 @@
+[
+  {
+    "code": "ARG",
+    "name": "Argentina",
+    "flag_emoji": "🇦🇷",
+    "flag_colors": [
+      "#74ACDF",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "ARG1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "ARG2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "ARG3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "ARG4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "ARG5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "ARG6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "ARG7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "ARG8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "ARG9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "ARG10",
+        "label": "L. Messi",
+        "type": "player"
+      },
+      {
+        "code": "ARG11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "ARG12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "ARG13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "ARG14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "ARG15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "ARG16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "ARG17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "ARG18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "ARG19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "ARG20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "BRA",
+    "name": "Brasil",
+    "flag_emoji": "🇧🇷",
+    "flag_colors": [
+      "#009B3A",
+      "#FFDF00"
+    ],
+    "stickers": [
+      {
+        "code": "BRA1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "BRA2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "BRA3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "BRA4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "BRA5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "BRA6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "BRA7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "BRA8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "BRA9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "BRA10",
+        "label": "Neymar Jr.",
+        "type": "player"
+      },
+      {
+        "code": "BRA11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "BRA12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "BRA13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "BRA14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "BRA15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "BRA16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "BRA17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "BRA18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "BRA19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "BRA20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "FRA",
+    "name": "Francia",
+    "flag_emoji": "🇫🇷",
+    "flag_colors": [
+      "#0055A4",
+      "#FFFFFF",
+      "#EF4135"
+    ],
+    "stickers": [
+      {
+        "code": "FRA1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "FRA2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "FRA3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "FRA4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "FRA5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "FRA6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "FRA7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "FRA8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "FRA9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "FRA10",
+        "label": "K. Mbappé",
+        "type": "player"
+      },
+      {
+        "code": "FRA11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "FRA12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "FRA13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "FRA14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "FRA15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "FRA16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "FRA17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "FRA18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "FRA19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "FRA20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "ESP",
+    "name": "España",
+    "flag_emoji": "🇪🇸",
+    "flag_colors": [
+      "#AA151B",
+      "#F1BF00"
+    ],
+    "stickers": [
+      {
+        "code": "ESP1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "ESP2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "ESP3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "ESP4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "ESP5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "ESP6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "ESP7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "ESP8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "ESP9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "ESP10",
+        "label": "Pedri",
+        "type": "player"
+      },
+      {
+        "code": "ESP11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "ESP12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "ESP13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "ESP14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "ESP15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "ESP16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "ESP17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "ESP18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "ESP19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "ESP20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "ENG",
+    "name": "Inglaterra",
+    "flag_emoji": "🏴",
+    "flag_colors": [
+      "#FFFFFF",
+      "#CF081F"
+    ],
+    "stickers": [
+      {
+        "code": "ENG1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "ENG2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "ENG3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "ENG4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "ENG5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "ENG6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "ENG7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "ENG8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "ENG9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "ENG10",
+        "label": "J. Bellingham",
+        "type": "player"
+      },
+      {
+        "code": "ENG11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "ENG12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "ENG13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "ENG14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "ENG15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "ENG16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "ENG17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "ENG18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "ENG19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "ENG20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "POR",
+    "name": "Portugal",
+    "flag_emoji": "🇵🇹",
+    "flag_colors": [
+      "#006600",
+      "#FF0000"
+    ],
+    "stickers": [
+      {
+        "code": "POR1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "POR2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "POR3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "POR4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "POR5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "POR6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "POR7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "POR8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "POR9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "POR10",
+        "label": "C. Ronaldo",
+        "type": "player"
+      },
+      {
+        "code": "POR11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "POR12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "POR13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "POR14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "POR15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "POR16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "POR17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "POR18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "POR19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "POR20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "GER",
+    "name": "Alemania",
+    "flag_emoji": "🇩🇪",
+    "flag_colors": [
+      "#000000",
+      "#DD0000",
+      "#FFCE00"
+    ],
+    "stickers": [
+      {
+        "code": "GER1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "GER2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "GER3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "GER4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "GER5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "GER6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "GER7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "GER8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "GER9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "GER10",
+        "label": "J. Musiala",
+        "type": "player"
+      },
+      {
+        "code": "GER11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "GER12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "GER13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "GER14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "GER15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "GER16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "GER17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "GER18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "GER19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "GER20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "ITA",
+    "name": "Italia",
+    "flag_emoji": "🇮🇹",
+    "flag_colors": [
+      "#009246",
+      "#FFFFFF",
+      "#CE2B37"
+    ],
+    "stickers": [
+      {
+        "code": "ITA1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "ITA2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "ITA3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "ITA4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "ITA5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "ITA6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "ITA7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "ITA8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "ITA9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "ITA10",
+        "label": "N. Barella",
+        "type": "player"
+      },
+      {
+        "code": "ITA11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "ITA12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "ITA13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "ITA14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "ITA15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "ITA16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "ITA17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "ITA18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "ITA19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "ITA20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "NED",
+    "name": "Países Bajos",
+    "flag_emoji": "🇳🇱",
+    "flag_colors": [
+      "#AE1C28",
+      "#FFFFFF",
+      "#21468B"
+    ],
+    "stickers": [
+      {
+        "code": "NED1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "NED2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "NED3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "NED4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "NED5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "NED6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "NED7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "NED8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "NED9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "NED10",
+        "label": "V. van Dijk",
+        "type": "player"
+      },
+      {
+        "code": "NED11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "NED12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "NED13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "NED14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "NED15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "NED16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "NED17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "NED18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "NED19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "NED20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "BEL",
+    "name": "Bélgica",
+    "flag_emoji": "🇧🇪",
+    "flag_colors": [
+      "#000000",
+      "#FAE042",
+      "#ED2939"
+    ],
+    "stickers": [
+      {
+        "code": "BEL1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "BEL2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "BEL3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "BEL4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "BEL5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "BEL6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "BEL7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "BEL8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "BEL9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "BEL10",
+        "label": "K. De Bruyne",
+        "type": "player"
+      },
+      {
+        "code": "BEL11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "BEL12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "BEL13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "BEL14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "BEL15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "BEL16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "BEL17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "BEL18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "BEL19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "BEL20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "CRO",
+    "name": "Croacia",
+    "flag_emoji": "🇭🇷",
+    "flag_colors": [
+      "#FF0000",
+      "#FFFFFF",
+      "#171796"
+    ],
+    "stickers": [
+      {
+        "code": "CRO1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "CRO2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "CRO3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "CRO4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "CRO5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "CRO6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "CRO7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "CRO8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "CRO9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "CRO10",
+        "label": "L. Modrić",
+        "type": "player"
+      },
+      {
+        "code": "CRO11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "CRO12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "CRO13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "CRO14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "CRO15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "CRO16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "CRO17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "CRO18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "CRO19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "CRO20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "URU",
+    "name": "Uruguay",
+    "flag_emoji": "🇺🇾",
+    "flag_colors": [
+      "#0038A8",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "URU1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "URU2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "URU3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "URU4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "URU5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "URU6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "URU7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "URU8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "URU9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "URU10",
+        "label": "L. Suárez",
+        "type": "player"
+      },
+      {
+        "code": "URU11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "URU12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "URU13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "URU14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "URU15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "URU16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "URU17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "URU18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "URU19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "URU20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "COL",
+    "name": "Colombia",
+    "flag_emoji": "🇨🇴",
+    "flag_colors": [
+      "#FCD116",
+      "#003893",
+      "#CE1126"
+    ],
+    "stickers": [
+      {
+        "code": "COL1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "COL2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "COL3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "COL4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "COL5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "COL6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "COL7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "COL8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "COL9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "COL10",
+        "label": "L. Díaz",
+        "type": "player"
+      },
+      {
+        "code": "COL11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "COL12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "COL13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "COL14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "COL15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "COL16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "COL17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "COL18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "COL19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "COL20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "MEX",
+    "name": "México",
+    "flag_emoji": "🇲🇽",
+    "flag_colors": [
+      "#006847",
+      "#FFFFFF",
+      "#CE1126"
+    ],
+    "stickers": [
+      {
+        "code": "MEX1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "MEX2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "MEX3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "MEX4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "MEX5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "MEX6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "MEX7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "MEX8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "MEX9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "MEX10",
+        "label": "S. Giménez",
+        "type": "player"
+      },
+      {
+        "code": "MEX11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "MEX12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "MEX13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "MEX14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "MEX15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "MEX16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "MEX17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "MEX18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "MEX19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "MEX20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "USA",
+    "name": "Estados Unidos",
+    "flag_emoji": "🇺🇸",
+    "flag_colors": [
+      "#3C3B6E",
+      "#FFFFFF",
+      "#B22234"
+    ],
+    "stickers": [
+      {
+        "code": "USA1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "USA2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "USA3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "USA4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "USA5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "USA6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "USA7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "USA8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "USA9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "USA10",
+        "label": "C. Pulisic",
+        "type": "player"
+      },
+      {
+        "code": "USA11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "USA12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "USA13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "USA14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "USA15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "USA16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "USA17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "USA18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "USA19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "USA20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "CAN",
+    "name": "Canadá",
+    "flag_emoji": "🇨🇦",
+    "flag_colors": [
+      "#FF0000",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "CAN1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "CAN2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "CAN3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "CAN4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "CAN5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "CAN6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "CAN7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "CAN8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "CAN9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "CAN10",
+        "label": "A. Davies",
+        "type": "player"
+      },
+      {
+        "code": "CAN11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "CAN12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "CAN13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "CAN14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "CAN15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "CAN16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "CAN17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "CAN18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "CAN19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "CAN20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "JPN",
+    "name": "Japón",
+    "flag_emoji": "🇯🇵",
+    "flag_colors": [
+      "#FFFFFF",
+      "#BC002D"
+    ],
+    "stickers": [
+      {
+        "code": "JPN1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "JPN2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "JPN3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "JPN4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "JPN5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "JPN6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "JPN7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "JPN8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "JPN9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "JPN10",
+        "label": "T. Kubo",
+        "type": "player"
+      },
+      {
+        "code": "JPN11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "JPN12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "JPN13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "JPN14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "JPN15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "JPN16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "JPN17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "JPN18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "JPN19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "JPN20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "KOR",
+    "name": "Corea del Sur",
+    "flag_emoji": "🇰🇷",
+    "flag_colors": [
+      "#FFFFFF",
+      "#C60C30",
+      "#003478"
+    ],
+    "stickers": [
+      {
+        "code": "KOR1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "KOR2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "KOR3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "KOR4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "KOR5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "KOR6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "KOR7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "KOR8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "KOR9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "KOR10",
+        "label": "Son Heung-min",
+        "type": "player"
+      },
+      {
+        "code": "KOR11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "KOR12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "KOR13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "KOR14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "KOR15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "KOR16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "KOR17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "KOR18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "KOR19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "KOR20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "AUS",
+    "name": "Australia",
+    "flag_emoji": "🇦🇺",
+    "flag_colors": [
+      "#00008B",
+      "#FFFFFF",
+      "#FF0000"
+    ],
+    "stickers": [
+      {
+        "code": "AUS1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "AUS2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "AUS3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "AUS4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "AUS5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "AUS6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "AUS7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "AUS8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "AUS9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "AUS10",
+        "label": "M. Ryan",
+        "type": "player"
+      },
+      {
+        "code": "AUS11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "AUS12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "AUS13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "AUS14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "AUS15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "AUS16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "AUS17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "AUS18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "AUS19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "AUS20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "MAR",
+    "name": "Marruecos",
+    "flag_emoji": "🇲🇦",
+    "flag_colors": [
+      "#C1272D",
+      "#006233"
+    ],
+    "stickers": [
+      {
+        "code": "MAR1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "MAR2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "MAR3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "MAR4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "MAR5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "MAR6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "MAR7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "MAR8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "MAR9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "MAR10",
+        "label": "A. Hakimi",
+        "type": "player"
+      },
+      {
+        "code": "MAR11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "MAR12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "MAR13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "MAR14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "MAR15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "MAR16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "MAR17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "MAR18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "MAR19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "MAR20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "SEN",
+    "name": "Senegal",
+    "flag_emoji": "🇸🇳",
+    "flag_colors": [
+      "#00853F",
+      "#FDEF42",
+      "#E31B23"
+    ],
+    "stickers": [
+      {
+        "code": "SEN1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "SEN2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "SEN3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "SEN4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "SEN5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "SEN6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "SEN7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "SEN8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "SEN9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "SEN10",
+        "label": "S. Mané",
+        "type": "player"
+      },
+      {
+        "code": "SEN11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "SEN12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "SEN13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "SEN14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "SEN15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "SEN16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "SEN17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "SEN18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "SEN19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "SEN20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "GHA",
+    "name": "Ghana",
+    "flag_emoji": "🇬🇭",
+    "flag_colors": [
+      "#CE1126",
+      "#FCD116",
+      "#006B3F"
+    ],
+    "stickers": [
+      {
+        "code": "GHA1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "GHA2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "GHA3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "GHA4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "GHA5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "GHA6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "GHA7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "GHA8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "GHA9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "GHA10",
+        "label": "M. Kudus",
+        "type": "player"
+      },
+      {
+        "code": "GHA11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "GHA12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "GHA13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "GHA14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "GHA15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "GHA16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "GHA17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "GHA18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "GHA19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "GHA20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "EGY",
+    "name": "Egipto",
+    "flag_emoji": "🇪🇬",
+    "flag_colors": [
+      "#CE1126",
+      "#FFFFFF",
+      "#000000"
+    ],
+    "stickers": [
+      {
+        "code": "EGY1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "EGY2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "EGY3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "EGY4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "EGY5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "EGY6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "EGY7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "EGY8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "EGY9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "EGY10",
+        "label": "M. Salah",
+        "type": "player"
+      },
+      {
+        "code": "EGY11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "EGY12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "EGY13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "EGY14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "EGY15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "EGY16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "EGY17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "EGY18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "EGY19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "EGY20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "NGA",
+    "name": "Nigeria",
+    "flag_emoji": "🇳🇬",
+    "flag_colors": [
+      "#008751",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "NGA1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "NGA2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "NGA3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "NGA4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "NGA5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "NGA6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "NGA7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "NGA8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "NGA9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "NGA10",
+        "label": "V. Osimhen",
+        "type": "player"
+      },
+      {
+        "code": "NGA11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "NGA12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "NGA13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "NGA14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "NGA15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "NGA16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "NGA17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "NGA18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "NGA19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "NGA20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "CMR",
+    "name": "Camerún",
+    "flag_emoji": "🇨🇲",
+    "flag_colors": [
+      "#007A5E",
+      "#CE1126",
+      "#FCD116"
+    ],
+    "stickers": [
+      {
+        "code": "CMR1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "CMR2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "CMR3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "CMR4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "CMR5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "CMR6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "CMR7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "CMR8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "CMR9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "CMR10",
+        "label": "A. Zambo Anguissa",
+        "type": "player"
+      },
+      {
+        "code": "CMR11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "CMR12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "CMR13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "CMR14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "CMR15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "CMR16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "CMR17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "CMR18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "CMR19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "CMR20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "SUI",
+    "name": "Suiza",
+    "flag_emoji": "🇨🇭",
+    "flag_colors": [
+      "#FF0000",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "SUI1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "SUI2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "SUI3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "SUI4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "SUI5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "SUI6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "SUI7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "SUI8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "SUI9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "SUI10",
+        "label": "G. Xhaka",
+        "type": "player"
+      },
+      {
+        "code": "SUI11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "SUI12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "SUI13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "SUI14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "SUI15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "SUI16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "SUI17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "SUI18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "SUI19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "SUI20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "DEN",
+    "name": "Dinamarca",
+    "flag_emoji": "🇩🇰",
+    "flag_colors": [
+      "#C60C30",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "DEN1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "DEN2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "DEN3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "DEN4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "DEN5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "DEN6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "DEN7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "DEN8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "DEN9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "DEN10",
+        "label": "C. Eriksen",
+        "type": "player"
+      },
+      {
+        "code": "DEN11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "DEN12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "DEN13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "DEN14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "DEN15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "DEN16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "DEN17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "DEN18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "DEN19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "DEN20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "SWE",
+    "name": "Suecia",
+    "flag_emoji": "🇸🇪",
+    "flag_colors": [
+      "#006AA7",
+      "#FECC00"
+    ],
+    "stickers": [
+      {
+        "code": "SWE1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "SWE2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "SWE3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "SWE4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "SWE5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "SWE6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "SWE7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "SWE8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "SWE9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "SWE10",
+        "label": "A. Isak",
+        "type": "player"
+      },
+      {
+        "code": "SWE11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "SWE12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "SWE13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "SWE14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "SWE15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "SWE16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "SWE17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "SWE18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "SWE19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "SWE20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "NOR",
+    "name": "Noruega",
+    "flag_emoji": "🇳🇴",
+    "flag_colors": [
+      "#BA0C2F",
+      "#FFFFFF",
+      "#00205B"
+    ],
+    "stickers": [
+      {
+        "code": "NOR1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "NOR2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "NOR3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "NOR4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "NOR5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "NOR6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "NOR7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "NOR8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "NOR9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "NOR10",
+        "label": "E. Haaland",
+        "type": "player"
+      },
+      {
+        "code": "NOR11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "NOR12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "NOR13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "NOR14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "NOR15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "NOR16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "NOR17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "NOR18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "NOR19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "NOR20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "POL",
+    "name": "Polonia",
+    "flag_emoji": "🇵🇱",
+    "flag_colors": [
+      "#FFFFFF",
+      "#DC143C"
+    ],
+    "stickers": [
+      {
+        "code": "POL1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "POL2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "POL3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "POL4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "POL5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "POL6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "POL7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "POL8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "POL9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "POL10",
+        "label": "R. Lewandowski",
+        "type": "player"
+      },
+      {
+        "code": "POL11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "POL12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "POL13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "POL14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "POL15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "POL16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "POL17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "POL18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "POL19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "POL20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "SRB",
+    "name": "Serbia",
+    "flag_emoji": "🇷🇸",
+    "flag_colors": [
+      "#C6363C",
+      "#0C4076",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "SRB1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "SRB2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "SRB3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "SRB4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "SRB5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "SRB6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "SRB7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "SRB8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "SRB9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "SRB10",
+        "label": "D. Vlahović",
+        "type": "player"
+      },
+      {
+        "code": "SRB11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "SRB12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "SRB13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "SRB14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "SRB15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "SRB16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "SRB17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "SRB18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "SRB19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "SRB20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "AUT",
+    "name": "Austria",
+    "flag_emoji": "🇦🇹",
+    "flag_colors": [
+      "#ED2939",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "AUT1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "AUT2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "AUT3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "AUT4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "AUT5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "AUT6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "AUT7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "AUT8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "AUT9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "AUT10",
+        "label": "D. Alaba",
+        "type": "player"
+      },
+      {
+        "code": "AUT11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "AUT12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "AUT13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "AUT14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "AUT15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "AUT16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "AUT17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "AUT18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "AUT19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "AUT20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "TUR",
+    "name": "Turquía",
+    "flag_emoji": "🇹🇷",
+    "flag_colors": [
+      "#E30A17",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "TUR1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "TUR2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "TUR3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "TUR4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "TUR5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "TUR6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "TUR7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "TUR8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "TUR9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "TUR10",
+        "label": "H. Çalhanoğlu",
+        "type": "player"
+      },
+      {
+        "code": "TUR11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "TUR12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "TUR13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "TUR14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "TUR15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "TUR16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "TUR17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "TUR18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "TUR19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "TUR20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "UKR",
+    "name": "Ucrania",
+    "flag_emoji": "🇺🇦",
+    "flag_colors": [
+      "#005BBB",
+      "#FFD500"
+    ],
+    "stickers": [
+      {
+        "code": "UKR1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "UKR2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "UKR3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "UKR4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "UKR5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "UKR6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "UKR7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "UKR8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "UKR9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "UKR10",
+        "label": "O. Zinchenko",
+        "type": "player"
+      },
+      {
+        "code": "UKR11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "UKR12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "UKR13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "UKR14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "UKR15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "UKR16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "UKR17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "UKR18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "UKR19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "UKR20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "CZE",
+    "name": "Chequia",
+    "flag_emoji": "🇨🇿",
+    "flag_colors": [
+      "#FFFFFF",
+      "#D7141A",
+      "#11457E"
+    ],
+    "stickers": [
+      {
+        "code": "CZE1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "CZE2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "CZE3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "CZE4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "CZE5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "CZE6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "CZE7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "CZE8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "CZE9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "CZE10",
+        "label": "P. Schick",
+        "type": "player"
+      },
+      {
+        "code": "CZE11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "CZE12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "CZE13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "CZE14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "CZE15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "CZE16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "CZE17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "CZE18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "CZE19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "CZE20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "SCO",
+    "name": "Escocia",
+    "flag_emoji": "🏴",
+    "flag_colors": [
+      "#005EB8",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "SCO1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "SCO2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "SCO3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "SCO4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "SCO5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "SCO6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "SCO7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "SCO8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "SCO9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "SCO10",
+        "label": "A. Robertson",
+        "type": "player"
+      },
+      {
+        "code": "SCO11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "SCO12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "SCO13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "SCO14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "SCO15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "SCO16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "SCO17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "SCO18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "SCO19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "SCO20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "WAL",
+    "name": "Gales",
+    "flag_emoji": "🏴",
+    "flag_colors": [
+      "#FFFFFF",
+      "#D30731",
+      "#00AD36"
+    ],
+    "stickers": [
+      {
+        "code": "WAL1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "WAL2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "WAL3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "WAL4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "WAL5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "WAL6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "WAL7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "WAL8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "WAL9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "WAL10",
+        "label": "B. Johnson",
+        "type": "player"
+      },
+      {
+        "code": "WAL11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "WAL12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "WAL13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "WAL14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "WAL15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "WAL16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "WAL17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "WAL18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "WAL19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "WAL20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "IRN",
+    "name": "Irán",
+    "flag_emoji": "🇮🇷",
+    "flag_colors": [
+      "#239F40",
+      "#FFFFFF",
+      "#DA0000"
+    ],
+    "stickers": [
+      {
+        "code": "IRN1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "IRN2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "IRN3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "IRN4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "IRN5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "IRN6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "IRN7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "IRN8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "IRN9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "IRN10",
+        "label": "M. Taremi",
+        "type": "player"
+      },
+      {
+        "code": "IRN11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "IRN12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "IRN13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "IRN14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "IRN15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "IRN16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "IRN17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "IRN18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "IRN19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "IRN20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "KSA",
+    "name": "Arabia Saudita",
+    "flag_emoji": "🇸🇦",
+    "flag_colors": [
+      "#006C35",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "KSA1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "KSA2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "KSA3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "KSA4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "KSA5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "KSA6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "KSA7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "KSA8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "KSA9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "KSA10",
+        "label": "S. Al-Dawsari",
+        "type": "player"
+      },
+      {
+        "code": "KSA11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "KSA12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "KSA13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "KSA14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "KSA15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "KSA16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "KSA17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "KSA18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "KSA19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "KSA20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "QAT",
+    "name": "Qatar",
+    "flag_emoji": "🇶🇦",
+    "flag_colors": [
+      "#8A1538",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "QAT1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "QAT2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "QAT3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "QAT4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "QAT5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "QAT6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "QAT7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "QAT8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "QAT9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "QAT10",
+        "label": "A. Afif",
+        "type": "player"
+      },
+      {
+        "code": "QAT11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "QAT12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "QAT13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "QAT14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "QAT15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "QAT16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "QAT17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "QAT18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "QAT19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "QAT20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "ECU",
+    "name": "Ecuador",
+    "flag_emoji": "🇪🇨",
+    "flag_colors": [
+      "#FFD100",
+      "#034EA2",
+      "#ED1C24"
+    ],
+    "stickers": [
+      {
+        "code": "ECU1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "ECU2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "ECU3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "ECU4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "ECU5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "ECU6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "ECU7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "ECU8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "ECU9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "ECU10",
+        "label": "M. Caicedo",
+        "type": "player"
+      },
+      {
+        "code": "ECU11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "ECU12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "ECU13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "ECU14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "ECU15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "ECU16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "ECU17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "ECU18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "ECU19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "ECU20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "PER",
+    "name": "Perú",
+    "flag_emoji": "🇵🇪",
+    "flag_colors": [
+      "#D91023",
+      "#FFFFFF"
+    ],
+    "stickers": [
+      {
+        "code": "PER1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "PER2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "PER3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "PER4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "PER5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "PER6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "PER7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "PER8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "PER9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "PER10",
+        "label": "P. Guerrero",
+        "type": "player"
+      },
+      {
+        "code": "PER11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "PER12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "PER13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "PER14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "PER15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "PER16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "PER17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "PER18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "PER19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "PER20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "CHI",
+    "name": "Chile",
+    "flag_emoji": "🇨🇱",
+    "flag_colors": [
+      "#0039A6",
+      "#FFFFFF",
+      "#D52B1E"
+    ],
+    "stickers": [
+      {
+        "code": "CHI1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "CHI2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "CHI3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "CHI4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "CHI5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "CHI6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "CHI7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "CHI8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "CHI9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "CHI10",
+        "label": "A. Sánchez",
+        "type": "player"
+      },
+      {
+        "code": "CHI11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "CHI12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "CHI13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "CHI14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "CHI15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "CHI16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "CHI17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "CHI18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "CHI19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "CHI20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "PAR",
+    "name": "Paraguay",
+    "flag_emoji": "🇵🇾",
+    "flag_colors": [
+      "#D52B1E",
+      "#FFFFFF",
+      "#0038A8"
+    ],
+    "stickers": [
+      {
+        "code": "PAR1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "PAR2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "PAR3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "PAR4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "PAR5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "PAR6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "PAR7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "PAR8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "PAR9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "PAR10",
+        "label": "M. Almirón",
+        "type": "player"
+      },
+      {
+        "code": "PAR11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "PAR12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "PAR13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "PAR14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "PAR15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "PAR16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "PAR17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "PAR18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "PAR19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "PAR20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "CRC",
+    "name": "Costa Rica",
+    "flag_emoji": "🇨🇷",
+    "flag_colors": [
+      "#002B7F",
+      "#FFFFFF",
+      "#CE1126"
+    ],
+    "stickers": [
+      {
+        "code": "CRC1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "CRC2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "CRC3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "CRC4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "CRC5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "CRC6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "CRC7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "CRC8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "CRC9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "CRC10",
+        "label": "K. Navas",
+        "type": "player"
+      },
+      {
+        "code": "CRC11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "CRC12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "CRC13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "CRC14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "CRC15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "CRC16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "CRC17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "CRC18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "CRC19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "CRC20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "PAN",
+    "name": "Panamá",
+    "flag_emoji": "🇵🇦",
+    "flag_colors": [
+      "#005293",
+      "#FFFFFF",
+      "#D21034"
+    ],
+    "stickers": [
+      {
+        "code": "PAN1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "PAN2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "PAN3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "PAN4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "PAN5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "PAN6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "PAN7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "PAN8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "PAN9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "PAN10",
+        "label": "A. Carrasquilla",
+        "type": "player"
+      },
+      {
+        "code": "PAN11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "PAN12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "PAN13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "PAN14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "PAN15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "PAN16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "PAN17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "PAN18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "PAN19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "PAN20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "NZL",
+    "name": "Nueva Zelanda",
+    "flag_emoji": "🇳🇿",
+    "flag_colors": [
+      "#00247D",
+      "#FFFFFF",
+      "#CC142B"
+    ],
+    "stickers": [
+      {
+        "code": "NZL1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "NZL2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "NZL3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "NZL4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "NZL5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "NZL6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "NZL7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "NZL8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "NZL9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "NZL10",
+        "label": "C. Wood",
+        "type": "player"
+      },
+      {
+        "code": "NZL11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "NZL12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "NZL13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "NZL14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "NZL15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "NZL16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "NZL17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "NZL18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "NZL19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "NZL20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  },
+  {
+    "code": "RSA",
+    "name": "Sudáfrica",
+    "flag_emoji": "🇿🇦",
+    "flag_colors": [
+      "#007A4D",
+      "#FFB612",
+      "#DE3831"
+    ],
+    "stickers": [
+      {
+        "code": "RSA1",
+        "label": "Escudo",
+        "type": "badge"
+      },
+      {
+        "code": "RSA2",
+        "label": "Foto grupal",
+        "type": "group"
+      },
+      {
+        "code": "RSA3",
+        "label": "Jugador 3",
+        "type": "player"
+      },
+      {
+        "code": "RSA4",
+        "label": "Jugador 4",
+        "type": "player"
+      },
+      {
+        "code": "RSA5",
+        "label": "Jugador 5",
+        "type": "player"
+      },
+      {
+        "code": "RSA6",
+        "label": "Jugador 6",
+        "type": "player"
+      },
+      {
+        "code": "RSA7",
+        "label": "Jugador 7",
+        "type": "player"
+      },
+      {
+        "code": "RSA8",
+        "label": "Jugador 8",
+        "type": "player"
+      },
+      {
+        "code": "RSA9",
+        "label": "Jugador 9",
+        "type": "player"
+      },
+      {
+        "code": "RSA10",
+        "label": "P. Tau",
+        "type": "player"
+      },
+      {
+        "code": "RSA11",
+        "label": "Jugador 11",
+        "type": "player"
+      },
+      {
+        "code": "RSA12",
+        "label": "Jugador 12",
+        "type": "player"
+      },
+      {
+        "code": "RSA13",
+        "label": "Jugador 13",
+        "type": "player"
+      },
+      {
+        "code": "RSA14",
+        "label": "Jugador 14",
+        "type": "player"
+      },
+      {
+        "code": "RSA15",
+        "label": "Jugador 15",
+        "type": "player"
+      },
+      {
+        "code": "RSA16",
+        "label": "Jugador 16",
+        "type": "player"
+      },
+      {
+        "code": "RSA17",
+        "label": "Jugador 17",
+        "type": "player"
+      },
+      {
+        "code": "RSA18",
+        "label": "Jugador 18",
+        "type": "player"
+      },
+      {
+        "code": "RSA19",
+        "label": "Jugador 19",
+        "type": "player"
+      },
+      {
+        "code": "RSA20",
+        "label": "Jugador 20",
+        "type": "player"
+      }
+    ]
+  }
+]

@@ -72,6 +72,20 @@ Los códigos de figurita deben ser únicos globalmente.
 
 Vercel no soporta FastAPI directamente. Usá Railway, Render o Fly.io para apps Python con SQLite.
 
+
+## Evitar publicar `.env` en GitHub
+
+El archivo `.env` contiene secretos locales y no debe versionarse. Este proyecto ignora `.env` y variantes locales desde `.gitignore`; solo se debe commitear `.env.example` con valores de ejemplo.
+
+Si alguna vez agregaste `.env` al índice de Git, quitá el tracking sin borrar tu copia local:
+
+```bash
+git rm --cached .env
+git commit -m "Stop tracking local env file"
+```
+
+Si el `.env` ya fue publicado con secretos reales, rotá esos secretos inmediatamente (por ejemplo `SECRET_KEY`, API keys y credenciales) y considerá limpiar el historial del repositorio antes de volver a publicar.
+
 ## Generar SECRET_KEY
 
 ```bash
